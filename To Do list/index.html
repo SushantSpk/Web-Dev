@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sushant's To-Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-grid">
+    <aside class="sidebar">
+      <div class="logo-glass">MyList</div>
+      <nav>
+        <a class="nav-link active" href="#">To-Dos</a>
+        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#">Calendar</a>
+      </nav>
+      <div class="profile-card">
+        <div class="avatar"></div>
+        <div>
+          <div class="profile-name">Sushant</div>
+          <div class="profile-email">sushant@email.com</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="main-header">
+        <h1>Welcome Back, Sushant!</h1>
+        <p class="subtitle">"Productivity is never an accident."</p>
+      </header>
+
+      <section class="stats-row">
+        <div class="stat-card">
+          <div class="stat-label">Tasks Left</div>
+          <div class="stat-value">3</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Completed</div>
+          <div class="stat-value">2</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Projects</div>
+          <div class="stat-value">1</div>
+        </div>
+      </section>
+
+      <section class="task-list">
+        <div class="task-card">
+          <span class="badge in-progress">In Progress</span>
+          <span class="task-title">Learn HTML</span>
+        </div>
+        <div class="task-card">
+          <span class="badge done">Done</span>
+          <span class="task-title">Practice CSS</span>
+        </div>
+        <div class="task-card">
+          <span class="badge in-progress">In Progress</span>
+          <span class="task-title">Build a project</span>
+        </div>
+        <button class="add-task-btn">+ Add New Task</button>
+      </section>
+    </main>
+
+    <aside class="editor-panel">
+      <div class="editor-glass">
+        <div class="editor-title">Task Details</div>
+
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" placeholder="Task name here..." disabled />
+
+        <label for="task-state">Task State:</label>
+        <select id="task-state" disabled>
+          <option>Not Started</option>
+          <option selected>In Progress</option>
+          <option>Completed</option>
+          <option>On Hold</option>
+        </select>
+
+        <label for="task-deadline">Deadline:</label>
+        <input type="date" id="task-deadline" disabled />
+
+        <label for="task-desc">Description:</label>
+        <textarea id="task-desc" placeholder="Task description..." disabled></textarea>
+
+        <div class="editor-actions">
+          <button class="save-btn">Save</button>
+          <button class="delete-btn">Delete</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
